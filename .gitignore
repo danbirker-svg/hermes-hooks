@@ -1,0 +1,20 @@
+# Hermes state (sessions, logs, credentials)
+.hermes/
+*.log
+
+# Credential files
+.xurl
+auth.json
+hosts.yml
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
