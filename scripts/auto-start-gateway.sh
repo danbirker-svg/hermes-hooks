@@ -29,7 +29,7 @@ if systemctl is-active --quiet hermes-gateway 2>/dev/null; then
 fi
 
 # Start the gateway
-~/.local/bin/hermes gateway start 2>&1 >> ~/.hermes/gateway_autostart.log
+~/.local/bin/hermes gateway start >> ~/.hermes/gateway_autostart.log 2>&1
 
 if [ $? -eq 0 ]; then
     echo "$(date): Gateway auto-started successfully" >> ~/.hermes/gateway_autostart.log

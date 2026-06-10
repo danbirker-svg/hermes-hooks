@@ -8,13 +8,13 @@
 #   3. Add to crontab: crontab -e
 #      */30 * * * * /root/refresh-tokens.sh
 
-LOG="/root/.hermes/logs/token-refresh.log"
+LOG="$HOME/.hermes/logs/token-refresh.log"
 mkdir -p "$(dirname "$LOG")"
 
 FAILURES=0
 
 # === xurl token refresh (X/Twitter API) ===
-if command -v xurl &>/dev/null && [ -f /root/.xurl ]; then
+if command -v xurl &>/dev/null && [ -f "$HOME/.xurl" ]; then
     RESULT=$(xurl search "test" -n 3 2>&1)
     if echo "$RESULT" | grep -q '"data"'; then
         echo "$(date): xurl OK" >> "$LOG"
