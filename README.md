@@ -10,6 +10,7 @@ Production-ready skills, scripts, and cron templates for [Hermes Agent](https://
 | **Cost Monitor** | Track API spend across providers, predict monthly burn, alert before budget breach |
 | **Credential Sync** | Keep OAuth tokens and API keys in sync between local and remote Hermes instances |
 | **WSL Auto-Start** | Scripts and task scheduler configs to keep Hermes running after Windows reboots |
+| **Hermes Tweet Safe Patterns** | X/Twitter reads and opt-in actions through the Hermes Tweet plugin |
 | **Cron Templates** | Proven cron job patterns — health checks, daily briefings, token refresh |
 
 ## Install
@@ -53,6 +54,9 @@ Keep OAuth tokens (xurl, xAI, etc.) synced between your local machine and a VPS 
 
 ### `xurl-safe-patterns`
 Hard-won patterns for using xurl with Hermes safely — rate limit guardrails, WSL OAuth setup, VPS token management, silent failure prevention in cron jobs. Every Hermes user automating X/Twitter needs this.
+
+### `hermes-tweet-safe-patterns`
+Safe Hermes Tweet plugin patterns for X/Twitter reads, monitoring, cron jobs, and approval-gated actions when you want managed API-key setup instead of xurl OAuth files on the Hermes host.
 
 ## Scripts
 
